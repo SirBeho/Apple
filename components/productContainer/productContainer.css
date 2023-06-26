@@ -1,0 +1,31 @@
+.ip-container-white {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.apple.com/v/iphone/home/bo/images/overview/hero/hero_iphone_14__de41900yuggi_large.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ip-container-black {
+    padding-top: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://www.apple.com/v/iphone/home/bo/images/overview/hero/hero_iphone_14_pro__e8bufymdlseq_large.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: black;
+    color: white;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;         
+}
+.ip-container-black p, .ip-container-black h3{
+    color: white;
+}

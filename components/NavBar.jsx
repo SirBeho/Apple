@@ -18,17 +18,18 @@ export default function NavBar() {
 
 
 
-  const pages = ["Home","Link"];
+  const pages = ["foro","Iphone"];
 
   return (
-    <div bg="primary" data-bs-theme="dark"  >
-      <Navbar className="z-2" bg="primary" data-bs-theme="dark" >
+    <div     className="fixed-top" >
+      <Navbar className="z-2 " data-bs-theme="dark" bg="body"  >
             <Container>
-              <Navbar.Brand href="/">Home</Navbar.Brand>
+              <Navbar.Brand href="/" onMouseEnter={() => setActiveDiv(false)} >Home</Navbar.Brand>
               <Nav className="me-auto">
               
                 {pages.map((link, index) => (
-                  <Nav.Link key={index} href={`/${link}`} onMouseEnter={() =>setActiveDiv(link) } >{link}</Nav.Link>
+                  
+                  <Nav.Link key={index} href={`/${link.toLowerCase()}`} onMouseEnter={() =>setActiveDiv(link) } >{link}</Nav.Link>
                 ))}
 
               </Nav>
@@ -37,7 +38,7 @@ export default function NavBar() {
            
       </Navbar>
       <Container>
-            <Opciones activeDiv={activeDiv}/>
+            <Opciones activeDiv={activeDiv} setActiveDiv={setActiveDiv}/>
       </Container>
       </div>
   )

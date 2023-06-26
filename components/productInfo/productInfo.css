@@ -1,0 +1,55 @@
+.ip-text {
+    /* margin-top: 120px ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-text h4 {
+    color: #6e6e73;
+    padding: 10px;
+}
+
+.ip-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 0;
+    color: #313131;
+}
+
+.ip-text h2 {
+    font-size: 38px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.ip-text p {
+    font-size: 20px;
+    color: #313131;
+}
+
+.ip-buttons {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.ip-buttons button {
+
+    background: #0071e3;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    padding: 4px 18px;
+
+
+}
+
+.ip-buttons a {
+    color: #0071e3;
+    margin-left: 20px;
+    font-size: 18px;
+}

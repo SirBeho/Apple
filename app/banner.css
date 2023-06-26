@@ -1,0 +1,17 @@
+/* styles/banner.module.css */
+
+.banner {
+  height: 100vh; /* Establece la altura del banner al 100% del viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-image {
+  margin-bottom: 0; /* Elimina el margen inferior */
+}
+
+.banner-image img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen al 100% */
+  height: auto; /* Ajusta la altura de la imagen automáticamente */
+}

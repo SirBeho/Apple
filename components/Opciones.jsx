@@ -1,19 +1,15 @@
 
 import React, { useState,useEffect } from "react";
 
-export default function opciones({activeDiv}) {
+export default function opciones({activeDiv,setActiveDiv}) {
 
-    const [mostrarImagen, setMostrarImagen] = useState(false);
-   
+     
    
   return (
-    <div className=' '>
-          
-            <div   className={`imagen-light w-100 z-1 ${activeDiv ? 'show' : ''}`}>
-                
-                 <div className={activeDiv !== "Home" ? "d-none" : "bg-pimary w-100"} id="home">
-                    <div className='bg-info'>
-                       <ul>
+            <div className={`imagen-light w-100 z-1 d-flex flex-column text-light ${activeDiv ? 'show' : ''}`}>
+                <div className={activeDiv !== "Watch" ? "d-none" : "z-2 w-100 bg-dark "} id="home">
+                    
+                       <ul >
                         <li>
                             menu 1
                         </li>
@@ -22,9 +18,9 @@ export default function opciones({activeDiv}) {
                         </li>
                        </ul>
                     </div>
-                </div>
-                <div className={activeDiv !== "Link" ? "d-none" : " bg-pimary w-100"} id="link">
-                <div className='bg-info'>
+                
+                <div className={activeDiv !== "Link" ? "d-none" : "z-2  w-100 bg-dark"} id="link">
+                
                        <ul>
                         <li>
                             hola menu 1
@@ -34,9 +30,12 @@ export default function opciones({activeDiv}) {
                         </li>
                        </ul>
                     </div>
-                 </div> 
-                     </div>
+                
+                <div className="bg-transparent w-100 h-100" onMouseEnter={() => setActiveDiv(false)}  >
+                           
+                </div>
+             </div>
 
-    </div>
+    
   )
 }
